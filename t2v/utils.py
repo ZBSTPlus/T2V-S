@@ -1,4 +1,3 @@
-# video_generator/utils.py
 from gtts import gTTS
 from moviepy.editor import TextClip, concatenate_videoclips, CompositeAudioClip, AudioFileClip
 import os
