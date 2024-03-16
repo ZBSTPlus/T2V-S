@@ -8,22 +8,23 @@ def read_text_from_file(file_path):
     return text
 
 def create_text_clips(text, font, fontsize, color,bg_color, duration):
-    text_segments = text.split(':')
+    text_segments = text.splitlines()
     clips = []
     audio_clips = []
     start_time = 0
 
     for segment in text_segments:
-        language = "te" if any(char.isdigit() for char in segment) else "en"
-        tts = gTTS(text=segment.strip(), lang=language, slow=False)
-        tts.save(f'temp_{start_time}.mp3')
-        audio_clip = AudioFileClip(f'temp_{start_time}.mp3')
-        audio_clips.append(audio_clip)
-        clip = TextClip(segment.strip(), fontsize=fontsize, color=color,bg_color=bg_color ,font=font)
-        clip = clip.set_duration(duration)
-        clip = clip.set_start(start_time)
-        start_time += duration
-        clips.append(clip)
+        if segment.strip(): 
+            language = "te" if any(char.isdigit() for char in segment) else "en"
+            tts = gTTS(text=segment.strip(), lang=language, slow=False)
+            tts.save(f'temp_{start_time}.mp3')
+            audio_clip = AudioFileClip(f'temp_{start_time}.mp3')
+            audio_clips.append(audio_clip)
+            clip = TextClip(segment.strip(), fontsize=fontsize, color=color,bg_color=bg_color ,font=font)
+            clip = clip.set_duration(duration)
+            clip = clip.set_start(start_time)
+            start_time += duration
+            clips.append(clip)
     return clips, audio_clips
 
 def generate_video(input_text,font, font_size, color='white', bg_color="black", duration=3, fps=3):
