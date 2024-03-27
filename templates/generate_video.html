@@ -469,7 +469,7 @@
   </div>
 </body>
 </html>
--->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -478,7 +478,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-image: url("https://wallpapers.com/images/hd/green-and-white-background-1920-x-1080-qtl3mg6ncxqifkvp.jpg"); /* Replace with the path to your image */
+      background-image: url("https://img.freepik.com/premium-photo/abstract-natural-background-with-flowing-green-lines-waves-white_476363-6122.jpg?w=740"); /* Replace with the path to your image */
       background-repeat: no-repeat;
       background-position: left;
       background-size: cover;
@@ -545,7 +545,7 @@
 <body>
   <div class="container">
     <div class="logo-container">
-      <img src="https://placeholdit.img/150x50" alt="Logo" class="logo-img">
+      <img src="https://media.licdn.com/dms/image/D560BAQF-Ga1VCHubNg/company-logo_200_200/0/1696416871793?e=1718841600&v=beta&t=WI7seuHOO_UnUtm1NKYfm0ZaU5ZNT2KFG2J2FTO0p-Q" alt="Logo" class="logo-img">
     </div>
     <h2>Text To Video Converter</h2>
     <form method="post">
@@ -573,3 +573,258 @@
 </body>
 </html>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 800px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo-img {
+      max-width: 100%;
+      height: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #388e3c;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .color-input-container {
+      margin-bottom: 20px;
+    }
+    textarea,
+    input[type="text"],
+    input[type="color"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: none;
+    }
+    input[type="submit"] {
+      background-color: #388e3c;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background-color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="https://media.licdn.com/dms/image/D560BAQF-Ga1VCHubNg/company-logo_200_200/0/1696416871793?e=1718841600&v=beta&t=WI7seuHOO_UnUtm1NKYfm0ZaU5ZNT2KFG2J2FTO0p-Q" alt="Logo" class="logo-img">
+    </div>
+    <h2>Text To Video Converter</h2>
+    <form method="post">
+      {% csrf_token %}
+      <label for="input_text">Input Text:</label>
+      <textarea name="input_text" rows="6" placeholder="Enter your text here..." required></textarea>
+      <div class="color-input-container">
+        <label for="font_size">Font Size:</label>
+        <input type="text" name="font_size" placeholder="Font Size (e.g., 70)">
+      </div>
+      <div class="color-input-container">
+        <label for="font_color">Font Color:</label>
+        <input type="color" name="font_color" value="#000000">
+      </div>
+      <div class="color-input-container">
+        <label for="background_color">Background Color:</label>
+        <input type="color" name="background_color" value="#ffffff">
+      </div>
+      <br>
+      <input type="submit" value="Generate Video">
+    </form>
+  </div>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 40px auto;
+    }
+    
+    h2 {
+      text-align: center;
+      color: #388e3c;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .color-input-container {
+      padding:15px;
+      margin-right: 10px;
+    }
+    textarea,
+    input[type="text"],
+    input[type="color"],
+    input[type="submit"] {
+      width: calc(100% - 5px); /* Adjust the width as needed */
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+      float: center;
+      margin-right: 10px;
+    }
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+    input[type="submit"] {
+      background-color: #388e3c;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: auto;
+      float: center;
+    }
+    input[type="submit"]:hover {
+      background-color: #2e7d32;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      color: #333;
+      padding: 1rem;
+      width: 100%;
+    }
+    .brand {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      align-self: flex-start;
+    }
+    
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; /* Align items vertically */
+    }
+    .nav-links li {
+      margin-right: 1rem;
+    }
+    .nav-links li a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      transition: background-color 0.3s;
+    }
+    .nav-links li a:hover {
+      background-color: #4CAF50; /* Dark green on hover */
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <div class="brand">
+        <h1><span style="color: green;">Zeta</span><span style="color: rgb(5, 4, 4);">byte</span></h1>
+      </div>
+      <div class="nav-links">
+        
+          <li><a href="http://127.0.0.1:8000/">Home</a></li>
+          <li><a href="https://www.linkedin.com/company/zettabyte-plus/about/">About Us</a></li>
+        
+      </div>
+    </nav>
+  </header>
+
+  
+  <div class="container">
+
+    <h2>Text To Video Converter</h2>
+    <form method="post" action="{% url 'generate_video_view' %}">
+      {% csrf_token %}
+      <div class="color-input-container">
+      <label for="input_text">Input Text:</label>
+      <textarea name="input_text" rows="6" placeholder="Enter your text here..." required></textarea>
+      </div>
+      <div class="color-input-container">
+        <label for="font_size">Font Size:</label>
+        <input type="text" name="font_size" placeholder="Font Size (e.g., 70)">
+      </div>
+      <div class="color-input-container">
+        <label for="font_style">Font Style:</label>
+        <select name="font_style" style="width: calc(100% - 5px); padding:10px;" >
+          <option value="Nirmala.ttf">Nirmala</option>
+          <option value="Arial.ttf">Arial</option>
+          <option value="Cedarville-Cursive.ttf">Cedarville-Cursive</option>
+          <option value="Pristina.ttf">Pristina</option>
+          <option value="Cooper Black Regular.ttf">Cooper Black Regular</option>
+          <!-- Add more options for other font styles -->
+        </select>
+      </div>
+      <div class="color-input-container">
+        <label for="font_color">Font Color:</label>
+        <input type="color" name="font_color" value="#000000">
+      </div>
+      <div class="color-input-container">
+        <label for="background_color">Background Color:</label>
+        <input type="color" name="background_color" value="#ffffff">
+      </div>
+      <input type="submit" value="Generate Video">
+    </form>
+  </div>
+</body>
+</html>
