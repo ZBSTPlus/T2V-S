@@ -21,6 +21,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+FONTS_DIR = os.path.join(BASE_DIR, 'fonts')
 
 
 

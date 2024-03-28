@@ -20,11 +20,13 @@ def create_text_clips(text, fonts, fontsize, color,bg_color, duration):
             tts.save(f'temp_{start_time}.mp3')
             audio_clip = AudioFileClip(f'temp_{start_time}.mp3')
             audio_clips.append(audio_clip)
-            clip = TextClip(segment.strip(), fontsize=fontsize, color=color,bg_color=bg_color ,font=fonts)
-            clip = clip.set_duration(duration)
-            clip = clip.set_start(start_time)
-            start_time += duration
-            clips.append(clip)
+            if fonts:
+                font=fonts[0]
+                clip = TextClip(segment.strip(), fontsize=fontsize, color=color,bg_color=bg_color ,font=font)
+                clip = clip.set_duration(duration)
+                clip = clip.set_start(start_time)
+                start_time += duration
+                clips.append(clip)
     return clips, audio_clips
 
 def generate_video(input_text,fonts, font_size, color='white', bg_color="black", duration=3, fps=3):

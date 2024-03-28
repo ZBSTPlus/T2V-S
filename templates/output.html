@@ -3,11 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>Video Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            background-image: url("https://t3.ftcdn.net/jpg/03/27/46/14/360_F_327461466_QUoWsYvURPQ9BmIal1rTwPjegDApI0XZ.jpg"); /* Set background color to white */
+            background-repeat: no-repeat; /* Prevent image from repeating */
+            background-size: cover; /* Cover the entire background */
+            background-position: top;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        h1 {
+            color: #388e3c;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #2e7d32;
+        }
+        nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        color: #333;
+        padding: 1rem;
+        width: 100%;
+        }   
+       
+        .brand {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+            align-self: flex-start;
+        }
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .nav-links li {
+            margin-right: 1rem;
+        }
+        .nav-links li a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            transition: background-color 0.3s;
+        }
+        .nav-links li a:hover {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <h1>Video generated successfully!</h1>
-    <form action="/media/output_video_with_audio/" method="get">
-        <input type="submit" value="View Video">
-    </form>
+    <header>
+        <nav>
+            <div class="brand">
+                <h1><span style="color: green;">Zeta</span><span style="color: rgb(5, 4, 4);">byte</span></h1>
+            </div>
+            <div class="nav-links">
+                    <li><a href="http://127.0.0.1:8000/">Home</a></li>
+                    <li><a href="https://www.linkedin.com/company/zettabyte-plus/about/">About Us</a></li>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Video generated successfully!</h1>
+        <form action="/media/output_video_with_audio.mp4/" method="get">
+            <input type="submit" value="View Video">
+        </form>
+    </div>
 </body>
 </html>
