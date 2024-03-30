@@ -105,7 +105,7 @@
             </div>
             <div class="nav-links">
         
-                <li><a href="http://127.0.0.1:8000/">Home</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="https://www.linkedin.com/company/zettabyte-plus/about/">About Us</a></li>
               
             </div>
@@ -121,7 +121,7 @@
         
             <h2>Let's Get Started</h2>
             <p>Start converting your text into videos now!</p>
-            <a href="/generate-video/"><button>Get Started</button></a>
+            <a href="{% url 'generate_video' %}"><button>Get Started</button></a>
         </div>
     </section>
 
