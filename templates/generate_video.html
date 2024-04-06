@@ -4,17 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Generate Video</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      background-image: url("https://t3.ftcdn.net/jpg/03/27/46/14/360_F_327461466_QUoWsYvURPQ9BmIal1rTwPjegDApI0XZ.jpg"); /* Set background color to white */
-      background-repeat: no-repeat; /* Prevent image from repeating */
-      background-size: cover; /* Cover the entire background */
-      background-position: top;
-      margin: 0;
-      padding: 0;
-    }
+    
     .container {
       max-width: 900px;
       padding: 40px;
@@ -78,42 +70,6 @@
     }
     input[type="submit"]:hover {
       background-color: #2e7d32;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #fff;
-      color: #333;
-      padding: 1rem;
-      width: 100%;
-    }
-    .brand {
-      font-size: 1.5rem;
-      margin-left: 1rem;
-      align-self: flex-start;
-    }
-    
-    .nav-links {
-      list-style-type: none;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center; /* Align items vertically */
-    }
-    .nav-links li {
-      margin-right: 1rem;
-    }
-    .nav-links li a {
-      color: #333;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      background-color: #4CAF50;
-      transition: background-color 0.3s;
-    }
-    .nav-links li a:hover {
-      background-color: #4CAF50; /* Dark green on hover */
-      color: #fff;
     }
   </style>
   

@@ -6,59 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text to Video Converter</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <style>
-        /* CSS code goes here */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            background-image: url("https://t3.ftcdn.net/jpg/03/27/46/14/360_F_327461466_QUoWsYvURPQ9BmIal1rTwPjegDApI0XZ.jpg"); /* Set background color to white */
-            background-repeat: no-repeat; /* Prevent image from repeating */
-            background-size: cover; /* Cover the entire background */
-            background-position: top;
-            color: #333; /* Set text color to black */
-            text-align: center;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #fff;
-            color: #333;
-            padding: 1rem;
-            width: 100%;
-        }
-
-        .brand {
-            font-size: 1.5rem;
-            margin-left: 1rem; /* Align Zetabyte to the left */
-            align-self: flex-start; /* Align Zetabyte to the top */
-        }
-
-        .nav-links {
-            list-style-type: none;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .nav-links li {
-            margin-right: 1rem;
-        }
-        .nav-links li a {
-        color: #333;
-        text-decoration: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        background-color: #4CAF50;
-        transition: background-color 0.3s;
-        }
-        .nav-links li a:hover {
-        background-color: #4CAF50; /* Dark green on hover */
-        color: #fff;
-        }
+        
+    
         /* Styles for body section */
         .slides {
             text-align: center;
@@ -114,8 +65,7 @@
 .container-fluid {
     max-width: 1200px;
     margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
+    padding: 20px;  
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-image: url("blob-scene-haikei.svg");
@@ -158,7 +108,7 @@
         <div class="col-12 col-sm-6 col-md-4 m-auto ">
             <!-- card starts here -->
             <div class="card shadow" style="height:450px ;width: 370px;">
-                <img src="{% static 'bhavitha3.jpeg' %}" alt="Team Member 1" class="card-img-top rounded-circle" style="width: 200px; align-self: center;">
+                <img src="{% static 'bhavitha3.jpeg' %}" alt="Team Member 1" class="card-img-top rounded-circle" style="width: 200px; align-self: center;margin-top: 10px;">
                 <div class="card-body text-center">
                     <h3 class="text-center">Bhavitha Nandaluru</h3>
                     <hr class="mx-auto w-75">
@@ -166,7 +116,7 @@
                         Roll No: 12006030<br>
                         Branch: Computer Science and Engineering<br>
                         College: Sri Venkateswara University<br>
-                        <a href="https://www.linkedin.com/in/bhavithanandaluru/"><img src="https://as2.ftcdn.net/v2/jpg/05/46/78/23/1000_F_546782398_26V3pL84dJYL7ovgIIIjcDJ7IhPUDxSA.jpg" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
+                        <a href="https://www.linkedin.com/in/bhavithanandaluru/"><img src="{% static 'linkedin_logo.jpg' %}" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
                     </p>
                 </div>
             </div>
@@ -176,7 +126,7 @@
         <div class="col-12 col-sm-6 col-md-4 m-auto">
             <!-- card starts here -->
             <div class="card shadow" style="height:450px ;width: 370px;">
-                <img src="{% static 'chandana.jpeg' %}" alt="Team Member 2" class="card-img-top rounded-circle" style="width: 200px; align-self: center;">
+                <img src="{% static 'chandana.jpeg' %}" alt="Team Member 2" class="card-img-top rounded-circle" style="width: 200px; align-self: center;margin-top: 10px;">
                 <div class="card-body text-center">
                     <h3 class="text-center">D Mani Chandana</h3>
                     <hr class="mx-auto w-75">
@@ -184,7 +134,7 @@
                         Roll No: 12004012<br>
                         Branch: Electronics & Communication Engineering<br>
                         College: Sri Venkateswara University<br>
-                        <a href="https://www.linkedin.com/in/mani-chandana-duggirala-503737266/"><img src="https://as2.ftcdn.net/v2/jpg/05/46/78/23/1000_F_546782398_26V3pL84dJYL7ovgIIIjcDJ7IhPUDxSA.jpg" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
+                        <a href="https://www.linkedin.com/in/mani-chandana-duggirala-503737266/"><img src="{% static 'linkedin_logo.jpg' %}" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
                         
                     </p>
                 </div>
@@ -195,7 +145,7 @@
         <div class="col-12 col-sm-6 col-md-4 m-auto">
             <!-- card starts here -->
             <div class="card shadow" style="height:450px ;width: 370px;">
-                <img src="{% static 'sahasree1.jpeg' %}" alt="Team Member 3" class="card-img-top rounded-circle" style="width: 200px; align-self: center;">
+                <img src="{% static 'sahasree1.jpeg' %}" alt="Team Member 3" class="card-img-top rounded-circle" style="width: 200px; align-self: center;margin-top: 10px;">
                 <div class="card-body text-center">
                     <h3 class="text-center">M Hari Sahasree</h3>
                     <hr class="mx-auto w-75">
@@ -203,7 +153,7 @@
                         Roll No: 12104028<br>
                         Branch: Electronics & Communication Engineering<br>
                         College: Sri Venkateswara University<br>
-                        <a href="https://www.linkedin.com/in/hari-sahasree-mudireddy-49a657248/"><img src="https://as2.ftcdn.net/v2/jpg/05/46/78/23/1000_F_546782398_26V3pL84dJYL7ovgIIIjcDJ7IhPUDxSA.jpg" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
+                        <a href="https://www.linkedin.com/in/hari-sahasree-mudireddy-49a657248/"><img src="{% static 'linkedin_logo.jpg' %}" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
                         
                     </p>
                 </div>
@@ -214,7 +164,7 @@
         <div class="col-12 col-sm-6 col-md-4 m-auto">
             <!-- card starts here -->
             <div class="card shadow" style="height:450px ;width: 370px;margin-top: 40px;">
-                <img src="{% static 'varshitha2.jpeg' %}" alt="Team Member 4" class="card-img-top rounded-circle" style="width: 200px; align-self: center;">
+                <img src="{% static 'varshitha2.jpeg' %}" alt="Team Member 4" class="card-img-top rounded-circle" style="width: 200px; align-self: center;margin-top: 10px;">
                 <div class="card-body text-center">
                     <h3 class="text-center">Varshitha Narasapuram</h3>
                     <hr class="mx-auto w-75">
@@ -222,7 +172,7 @@
                         Roll No: 12104032<br>
                         Branch: Electronics & Communication Engineering<br>
                         College: Sri Venkateswara University<br>
-                        <a href="https://www.linkedin.com/in/varshitha-narasapuram-a38471261/"><img src="https://as2.ftcdn.net/v2/jpg/05/46/78/23/1000_F_546782398_26V3pL84dJYL7ovgIIIjcDJ7IhPUDxSA.jpg" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
+                        <a href="https://www.linkedin.com/in/varshitha-narasapuram-a38471261/"><img src="{% static 'linkedin_logo.jpg' %}" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
                         
                     </p>
                 </div>
@@ -233,15 +183,15 @@
         <div class="col-12 col-sm-6 col-md-4 m-auto">
             <!-- card starts here -->
             <div class="card shadow" style="height:450px ;width: 370px;margin-top: 40px;">
-                <img src="{% static 'likhith.jpg' %}" alt="Team Member 5" class="card-img-top rounded-circle" style="width: 200px; align-self: center;">
+                <img src="{% static 'likhith.jpg' %}" alt="Team Member 5" class="card-img-top rounded-circle" style="width: 200px; align-self: center;margin-top: 10px;">
                 <div class="card-body text-center">
-                    <h3 class="text-center">P likhith Kumar</h3>
+                    <h3 class="text-center">P Likhith Kumar</h3>
                     <hr class="mx-auto w-75">
                     <p>
                         Roll No: 12104037<br>
                         Branch: Electronics & Communication Engineering<br>
                         College: Sri Venkateswara University<br>
-                        <a href="https://www.linkedin.com/in/likhith-kumar-5742352a5/"><img src="https://as2.ftcdn.net/v2/jpg/05/46/78/23/1000_F_546782398_26V3pL84dJYL7ovgIIIjcDJ7IhPUDxSA.jpg" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
+                        <a href="https://www.linkedin.com/in/likhith-kumar-5742352a5/"><img src="{% static 'linkedin_logo.jpg' %}" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
                         
                     </p>
                 </div>
@@ -252,7 +202,7 @@
         <div class="col-12 col-sm-6 col-md-4 m-auto">
             <!-- card starts here -->
             <div class="card shadow" style="height:450px ;width: 370px;margin-top: 40px;">
-                <img src="{% static 'bhavitha.jpeg' %}" alt="Team Member 6" class="card-img-top rounded-circle" style="width: 200px; align-self: center;">
+                <img src="{% static 'bhavitha.jpeg' %}" alt="Team Member 6" class="card-img-top rounded-circle" style="width: 200px; align-self: center;margin-top: 10px;">
                 <div class="card-body text-center">
                     <h3 class="text-center">Ganesh Barla</h3>
                     <hr class="mx-auto w-75">
@@ -260,7 +210,7 @@
                         Roll No: 12104004<br>
                         Branch: Electronics & Communication Engineering<br>
                         College: Sri Venkateswara University<br>
-                        <a href="https://www.linkedin.com/in/ganesh-barla-9023932b1/"><img src="https://as2.ftcdn.net/v2/jpg/05/46/78/23/1000_F_546782398_26V3pL84dJYL7ovgIIIjcDJ7IhPUDxSA.jpg" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
+                        <a href="https://www.linkedin.com/in/ganesh-barla-9023932b1/"><img src="{% static 'linkedin_logo.jpg' %}" alt="LinkedIn Logo" style="width: 35px; height: 35px;align-content: center;margin-top: 10px;"></a>
                         
                     </p>
                 </div>
