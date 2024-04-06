@@ -21,3 +21,7 @@ def generate_video_view(request):
         generate_video(input_text, selected_font_path, font_size, font_color, background_color)
         return render(request,'output.html')
     return render(request, 'generate_video.html')
+
+
+def about_us_view(request):
+    return render(request, 'about_us.html')
